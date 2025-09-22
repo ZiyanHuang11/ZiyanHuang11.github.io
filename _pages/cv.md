@@ -1,11 +1,22 @@
 ---
 layout: cv
-permalink: /assets/pdf/CV(Ziyan).pdf
+permalink: /cv/
 title: cv
 nav: true
 nav_order: 5
-cv_pdf: example_pdf.pdf # you can also use external links here
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+cv_pdf: CV(Ziyan).pdf
+description: View my curriculum vitae online.
 toc:
   sidebar: left
 ---
+
+<div class="cv-viewer">
+  <iframe src="{{ '/assets/pdf/CV(Ziyan).pdf' | relative_url }}" 
+          width="100%" 
+          height="800px" 
+          style="border: none;">
+    <p>Your browser does not support PDFs. 
+       <a href="{{ '/assets/pdf/CV(Ziyan).pdf' | relative_url }}">Download the PDF</a>.
+    </p>
+  </iframe>
+</div>

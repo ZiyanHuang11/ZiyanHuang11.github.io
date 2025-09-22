@@ -276,6 +276,30 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// CV Viewer
+.cv-viewer {
+  margin: 1rem 0;
+  
+  iframe {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 600px;
+  }
+  
+  // Responsive design for mobile
+  @media (max-width: 768px) {
+    iframe {
+      height: 500px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    iframe {
+      height: 400px;
+    }
+  }
+}
+
 .post-description {
   margin-bottom: 2rem;
   font-size: 0.875rem;
