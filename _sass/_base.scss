@@ -193,7 +193,7 @@ ul.task-list input[type="checkbox"] {
 // Profile
 
 .profile {
-  width: 50%;
+  width: 70%;
 
   .more-info {
     margin-bottom: 5px;
@@ -217,11 +217,60 @@ ul.task-list input[type="checkbox"] {
 
 @media (min-width: 576px) {
   .profile {
-    width: 20%;
+    width: 30%;
 
     .address {
       p {
         display: block;
+      }
+    }
+  }
+}
+
+// Social icons under profile photo
+.social-under-photo {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5rem;
+
+  .contact-icons {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+
+    a {
+      flex: 0 1 auto;
+      
+      img {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-bottom: 0.2rem;
+      }
+
+      svg {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-bottom: 0.2rem;
+
+        image {
+          width: 1.8rem;
+          height: 1.8rem;
+        }
+      }
+
+      i::before {
+        color: var(--global-text-color);
+        transition-property: all 0.2s ease-in-out;
+      }
+
+      &:hover {
+        text-decoration: none;
+
+        i::before {
+          color: var(--global-theme-color);
+        }
       }
     }
   }
