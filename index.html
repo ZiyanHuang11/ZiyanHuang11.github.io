@@ -1,19 +1,18 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <title>Redirecting…</title>
 
-  <!-- 强制立即跳转（兼容不支持 JS 的情况）-->
+  <!-- Force immediate redirect (for browsers without JS support) -->
   <meta http-equiv="refresh" content="0; url=https://www.linkedin.com/in/ziyan-huang-8898652b2" />
 
-  <!-- 当启用 JS 时使用 location.replace，避免在浏览器历史中留下原页 -->
+  <!-- Use location.replace to avoid keeping this page in browser history -->
   <script>
-    // 使用 replace，用户按后退不会回到这个重定向页
     window.location.replace("https://www.linkedin.com/in/ziyan-huang-8898652b2");
   </script>
 
-  <!-- 简要样式，让短时间显示更友好 -->
+  <!-- Simple styling for a friendly short display -->
   <style>
     html,body{height:100%;margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f7fa;color:#222;display:flex;align-items:center;justify-content:center}
     .box{max-width:560px;text-align:center;padding:24px;border-radius:8px}
@@ -22,10 +21,11 @@
 </head>
 <body>
   <div class="box">
-    <h2>正在跳转到我的 LinkedIn …</h2>
-    <p>如果未自动跳转，请点击下面链接：<br/>
+    <h2>Redirecting to my LinkedIn…</h2>
+    <p>If you are not redirected automatically, please click the link below:<br/>
       <a href="https://www.linkedin.com/in/ziyan-huang-8898652b2">https://www.linkedin.com/in/ziyan-huang-8898652b2</a>
     </p>
   </div>
 </body>
 </html>
+
